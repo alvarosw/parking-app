@@ -22,23 +22,24 @@ export default function Login() {
       <Container>
         <Header>
           <Feather name="chevron-left" size={30} color="#000" />
+          <Vector/>
           <Logo>LOGO</Logo>
         </Header>
 
-        <Vector></Vector>
+        <Vector />
         <Form>
           <Title>Faça seu login</Title>
           <Input
             placeholder="Email"
             icon="mail"
             iconSize={16}
-            iconColor="black"
+            iconColor="#142328"
           />
           <Input
             placeholder="Palavra-passe"
             icon="lock"
             iconSize={16}
-            iconColor="black"
+            iconColor="#142328"
             isPasswordInput
             activeIconColor="#06C167"
           />

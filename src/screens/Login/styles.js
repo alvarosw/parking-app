@@ -1,18 +1,17 @@
 import styled from "styled-components/native";
+import Constants from 'expo-constants';
 
 export const Wrapper = styled.SafeAreaView`
-  background: white;
+  margin-top: ${Constants.statusBarHeight}px;
+  background-color: white;
 `;
 
 export const Container = styled.View`
   background: #010101;
-  background-color: black;
-  color:black;
-  
 `;
 
 export const Header = styled.View`
-  padding: 35px 10px;
+  padding: 16px 8px;
   background: white;
   z-index: 1;
 `;
@@ -45,6 +44,7 @@ export const Vector = styled.View`
 
 export const Form = styled.View`
   padding-bottom: 100%;
+  z-index: 1;
 `;
 
 export const Title = styled.Text`
