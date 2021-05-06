@@ -21,14 +21,14 @@ export default function Input({
           name="eye-off"
           size={iconSize}
           color={iconColor}
-          style={{ left: 15 }}
+          style={{ left: "40%" }}
         />
         <Feather
           name="eye"
           size={iconSize}
           color={activeIconColor}
           style={{
-            left: 35,
+            left: "77%"
           }}
         />
       </Container>

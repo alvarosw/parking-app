@@ -22,7 +22,6 @@ export default function Login() {
       <Container>
         <Header>
           <Feather name="chevron-left" size={30} color="#000" />
-          <Vector/>
           <Logo>LOGO</Logo>
         </Header>
 

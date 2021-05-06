@@ -8,6 +8,7 @@ export const Wrapper = styled.SafeAreaView`
 
 export const Container = styled.View`
   background: #010101;
+  justify-content: space-between;
 `;
 
 export const Header = styled.View`
@@ -17,13 +18,14 @@ export const Header = styled.View`
 `;
 
 export const Logo = styled.Text`
-  margin-top: 38px;
+  margin: 10%;
   align-self: center;
-  padding: 40px 96px;
+  padding: 35px 85px;
 
-  background: #010101;
+  background-color: #010101;
   font-size: 12px;
   color: white;
+  z-index: 1;
   /* font-family: "Roboto"; */
 `;
 
@@ -32,14 +34,11 @@ export const Vector = styled.View`
   height: 585px;
   width: 585px;
 
-  top: 16.98%;
-  bottom: 3.53%;
-  left: -25%;
+  bottom: 32%;
+  left: -21%;
   position: absolute;
   transform: rotate(-12.34deg);
   border-radius: 260px;
-
-  justify-content: center;
 `;
 
 export const Form = styled.View`
@@ -49,16 +48,16 @@ export const Form = styled.View`
 
 export const Title = styled.Text`
   display: flex;
-  margin: 19px 0 33px;
-  text-align: center;
+  margin-bottom: 8%;
+  align-self: center;
 
   /* font-family: "Red Hat Display"; */
   font-size: 24px;
   line-height: 32px;
 `;
 
-export const Button = styled.TouchableHighlight`
-  margin: 32px 0 25px;
+export const Button = styled.TouchableOpacity`
+  margin: 10% 0 8%;
   align-self: center;
   justify-content: center;
 
