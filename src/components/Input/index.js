@@ -2,7 +2,7 @@ import React from "react";
 
 import { Feather } from "@expo/vector-icons";
 
-import { Container, InputContainer, TextInput } from "./styles";
+import { Container, TextInput } from "./styles";
 
 export default function Input({
   icon,
@@ -15,29 +15,30 @@ export default function Input({
   if (isPasswordInput) {
     return (
       <Container>
-        <InputContainer>
-          <Feather name={icon} size={iconSize} color={iconColor} />
-          <TextInput placeholder={placeholder} secureTextEntry />
-          <Feather name="eye-off" size={iconSize} color={iconColor} />
-        </InputContainer>
+        <Feather name={icon} size={iconSize} color={iconColor} />
+        <TextInput placeholder={placeholder} secureTextEntry />
+        <Feather
+          name="eye-off"
+          size={iconSize}
+          color={iconColor}
+          style={{ left: 15 }}
+        />
         <Feather
           name="eye"
           size={iconSize}
           color={activeIconColor}
           style={{
-            position: "absolute",
-            right: 15,
-            top: 14
+            left: 35,
           }}
         />
       </Container>
     );
   } else {
     return (
-      <InputContainer>
+      <Container>
         <Feather name={icon} size={iconSize} color={iconColor} />
         <TextInput placeholder={placeholder} />
-      </InputContainer>
+      </Container>
     );
   }
 }
