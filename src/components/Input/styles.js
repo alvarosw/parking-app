@@ -1,6 +1,8 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.View``;
+
+export const InputContainer = styled.View`
   padding: 0 15px;
   height: 44px;
   width: 320px;
