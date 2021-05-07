@@ -45,8 +45,15 @@ export const Input = styled.TextInput`
 `;
 
 export const Submits = styled.View`
-  margin-top: 46px;
+  margin: 46px 0 46px;
+  padding-bottom: 94px;
+`;
 
+export const TicketView = styled.View`
+  margin: 19px 0 28px;
+`;
+
+export const ButtonsView = styled.View`
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 `;

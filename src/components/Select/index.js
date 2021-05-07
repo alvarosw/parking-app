@@ -4,7 +4,7 @@ import { Feather } from '@expo/vector-icons';
 
 import { Container, Selector } from "./styles";
 
-export default function Select({value, label}) {
+export default function Select({label}) {
   return (
     <Container>
       <Selector>
