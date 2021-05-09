@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Ticket = styled.View`
-elevation: 0.5;
+  elevation: 0.5;
   background-color: #fcffe7;
   width: 340px;
   height: 326px;
-  margin-top: 14px;
 `;
 
 export const Detachable = styled.View`
