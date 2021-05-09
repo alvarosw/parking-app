@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ScrollableContainer = styled.ScrollView``;
 
+export const Content = styled.View``;
+
 export const Header = styled.View`
   flex-direction: row;
   margin: 20px 30px;
@@ -45,8 +47,8 @@ export const Input = styled.TextInput`
 `;
 
 export const Submits = styled.View`
-  margin: 46px 0 46px;
-  padding-bottom: 94px;
+  align-items: center;
+  margin: 46px 0 96px;
 `;
 
 export const TicketView = styled.View`
@@ -54,6 +56,7 @@ export const TicketView = styled.View`
 `;
 
 export const ButtonsView = styled.View`
+  width: 340px;
   flex-direction: row;
   justify-content: space-between;
 `;

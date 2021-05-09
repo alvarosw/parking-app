@@ -25,8 +25,7 @@ export const Cuts = styled.View`
 `;
 
 export const Content = styled.View`
-  flex-direction: column;
-  justify-content: space-between;
+  //nenhum estilo aplica por aqui wtf
 `;
 
 export const ContentHeader = styled.View`
@@ -65,7 +64,6 @@ export const QRCode = styled.View`
 export const ContentBody = styled.View`
   margin: 24px;
   height: 130px;
-  justify-content: space-between;
 `;
 
 export const BodyTitle = styled.View`
@@ -99,7 +97,7 @@ export const EntryText = styled.Text`
 `;
 
 export const ContentFooter = styled.View`
-  margin-top: 20px;
+  margin-top: 40px;
   align-items: center;
 `;
 
