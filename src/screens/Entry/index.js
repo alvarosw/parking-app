@@ -1,8 +1,11 @@
 import React from "react";
+
+import { SafeAreaView } from "react-native";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
+
 import { Ionicons } from "@expo/vector-icons";
 
 import Constants from "expo-constants";
-import { SafeAreaView } from "react-native";
 
 import Select from "../../components/Select";
 import Button from "../../components/Button";
@@ -21,7 +24,7 @@ import {
   ButtonsView,
 } from "./styles";
 
-export default function Entry() {
+export default function Entry({ navigation }) {
   return (
     <SafeAreaView
       style={{
@@ -32,7 +35,13 @@ export default function Entry() {
       <ScrollableContainer>
         <Header>
           <Title>Nova entrada</Title>
-          <Ionicons name="md-close" size={36} color="#142328"></Ionicons>
+          <TouchableWithoutFeedback
+            onPress={() => {
+              navigation.navigate("Login");
+            }}
+          >
+            <Ionicons name="md-close" size={36} color="#142328"></Ionicons>
+          </TouchableWithoutFeedback>
         </Header>
         <Form>
           <PlacaInputContainer>

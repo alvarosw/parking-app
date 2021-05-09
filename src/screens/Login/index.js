@@ -1,10 +1,11 @@
 import React from "react";
 
 import Constants from "expo-constants";
-import { SafeAreaView } from "react-native";
 
 import { Feather } from "@expo/vector-icons";
 
+import { SafeAreaView } from "react-native";
+import { View } from "react-native";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 
@@ -17,9 +18,9 @@ import {
   Form,
   ForgotPass,
 } from "./styles";
-import { View } from "react-native";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
-export default function Login() {
+export default function Login({ navigation }) {
   return (
     <SafeAreaView
       style={{
@@ -52,13 +53,18 @@ export default function Login() {
               activeIconColor="#06C167"
             />
           </View>
-          <Button
-            label="Iniciar Sessão"
-            color="#142328"
-            width={320}
-            height={44}
-            teste={() => {this.props.navigation.navigate('Entry')}}
-          />
+          <TouchableWithoutFeedback
+            onPress={() => {
+              navigation.navigate("Entry");
+            }}
+          >
+            <Button
+              label="Iniciar Sessão"
+              color="#142328"
+              width={320}
+              height={44}
+            />
+          </TouchableWithoutFeedback>
           <ForgotPass>Esqueceu-se da palavra-passe?</ForgotPass>
         </Form>
       </Container>
