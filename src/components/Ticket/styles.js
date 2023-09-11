@@ -24,9 +24,7 @@ export const Cuts = styled.View`
   background-color: white;
 `;
 
-export const Content = styled.View`
-  //nenhum estilo aplica por aqui wtf
-`;
+export const Content = styled.View``;
 
 export const ContentHeader = styled.View`
   margin: 0 26px 0 12px;

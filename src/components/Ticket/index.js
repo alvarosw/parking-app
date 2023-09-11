@@ -69,21 +69,21 @@ export default function TicketComp() {
             </BodyTitle>
             <EntryData>
               <Timestamps>
-                <EntryText>ENTRADA: 12::00:54</EntryText>
-                <EntryText>SAÍDA: 13::00:54</EntryText>
+                <EntryText>ENTRADA: 12:00:54</EntryText>
+                <EntryText>SAÍDA: 13:12:29</EntryText>
               </Timestamps>
               <PaymentData>
-                <EntryText>TOTAL: R$15,00</EntryText>
+                <EntryText>TOTAL: R$15,18</EntryText>
                 <EntryText>PAGAMENTO: DINHEIRO</EntryText>
               </PaymentData>
             </EntryData>
           </ContentBody>
           <ContentFooter>
             <FooterTitle>
-              JF PARK ESTACIONAMENTOS CNPJ 546.554.44/00001-44
+              A.S. PARK ESTACIONAMENTOS CNPJ 111.222.33/00001-44
             </FooterTitle>
             <FooterSubtitle>
-              SISTEMAS DESENVOLVIDO POR WITSDIGITAL
+              SISTEMAS DESENVOLVIDO POR ALVAROSW
             </FooterSubtitle>
           </ContentFooter>
         </Content>

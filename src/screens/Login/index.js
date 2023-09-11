@@ -1,11 +1,10 @@
 import React from "react";
 
 import Constants from "expo-constants";
-
+import { View, SafeAreaView } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
-import { SafeAreaView } from "react-native";
-import { View } from "react-native";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 
@@ -18,7 +17,6 @@ import {
   Form,
   ForgotPass,
 } from "./styles";
-import { TouchableWithoutFeedback } from "react-native-gesture-handler";
 
 export default function Login({ navigation }) {
   return (
